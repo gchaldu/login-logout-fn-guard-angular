@@ -1,0 +1,19 @@
+<section>
+  <fieldset>
+    <legend>LogIn</legend>
+    <form [formGroup]="formulario" (ngSubmit)="onlogin()">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        formControlName="username"
+        id="username"
+        placeholder="Ingrese su usuario"
+      />
+
+      <label for="password">Password</label>
+      <input type="password" formControlName="password" id="password" />
+
+      <button>Iniciar Sesión</button>
+    </form>
+  </fieldset>
+</section>
